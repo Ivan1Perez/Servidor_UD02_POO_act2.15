@@ -51,7 +51,7 @@ class Producto{
 class Monitor extends Producto{
     private $pulgadas;
 
-    function __construc($peso, $precio, $stock, $pulgadas) {
+    function __construct($peso, $precio, $stock, $pulgadas) {
         parent::__construct($peso, $precio, $stock);
         $this->pulgadas = $pulgadas;
     }
@@ -61,12 +61,13 @@ class Monitor extends Producto{
         $vector['pulgadas'] = $this->pulgadas;
         return $vector;
     }
+
 }
 
 class DiscoDuro extends Producto{
     private $capacidad;
 
-    function __construc($peso, $precio, $stock, $capacidad) {
+    function __construct($peso, $precio, $stock, $capacidad) {
         parent::__construct($peso, $precio, $stock);
         $this->capacidad = $capacidad;
     }
